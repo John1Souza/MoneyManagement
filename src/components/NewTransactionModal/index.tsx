@@ -1,6 +1,7 @@
 import Modal from "react-modal";
-import { Container } from "./styles";
-import closeImg from "../../assets/x-white.svg"
+import { Container, RadioBox, TransactionTypeContainer } from "./styles";
+import { useState } from "react"
+import { BsArrowDownCircle, BsArrowUpCircle} from "react-icons/bs"
 import { RxCrossCircled } from "react-icons/rx"
 
 
@@ -11,6 +12,10 @@ interface NewTransactionModalProps {
 }
 
 export function NewTransactionModal({ isOpen,onRequestClose}:NewTransactionModalProps) {
+
+ const [type, setType] = useState('deposit')
+
+
   return (
     <Modal
       isOpen={isOpen}
@@ -36,6 +41,26 @@ export function NewTransactionModal({ isOpen,onRequestClose}:NewTransactionModal
           type="number"
           placeholder="Value" 
         />
+
+        <TransactionTypeContainer>
+          <RadioBox 
+            type="button"
+            onClick={() => { setType('deposit') }}
+            isActive={type === 'deposit'}
+          >
+            <BsArrowDownCircle size={30} style={{display: "flex", color: "green"}}/>
+            <span>Income</span>
+          </RadioBox>
+          <RadioBox 
+            type="button"
+            onClick={() => { setType('withdraw') }}
+            isActive={type === 'deposit'}
+          >
+            <BsArrowUpCircle style={{display: "flex",color: "red"}} size={30}/>
+            <span>Outcome</span>
+          </RadioBox>
+        </TransactionTypeContainer> 
+
         <input 
           placeholder="Category"  
         />
