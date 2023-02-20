@@ -16,11 +16,11 @@
 
 ![image](https://user-images.githubusercontent.com/109979241/220180132-1078c3ca-4d96-4c5b-9bd0-1004075cf21c.png)
 
-![image](https://user-images.githubusercontent.com/109979241/220180159-9a89bd2b-8a26-486c-b056-5500cbad003f.png)
+![image](https://user-images.githubusercontent.com/109979241/220180309-591cb5b3-bc26-4172-9326-11d9d2c0bfb8.png)
 
 ### O modal com formulário será fechado, e na tela inicial estarão armazenadas suas novas transações, informando agora o total de "Entradas" e "Saídas" e o "Saldo Total"
 
-![image](https://user-images.githubusercontent.com/109979241/220180201-de3643fe-3be7-4db5-9619-36a3320ff0a4.png)
+![image](https://user-images.githubusercontent.com/109979241/220180329-b379d783-9c7d-4560-8512-ca98a3ba85ad.png)
 
 
 
