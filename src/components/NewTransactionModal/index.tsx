@@ -1,8 +1,9 @@
 import Modal from "react-modal";
 import { Container, RadioBox, TransactionTypeContainer } from "./styles";
-import { useState } from "react"
+import { FormEvent, useState } from "react"
 import { BsArrowDownCircle, BsArrowUpCircle} from "react-icons/bs"
 import { RxCrossCircled } from "react-icons/rx"
+import { api } from "../../services/api";
 
 
 
@@ -13,7 +14,26 @@ interface NewTransactionModalProps {
 
 export function NewTransactionModal({ isOpen,onRequestClose}:NewTransactionModalProps) {
 
+ const [title, setTitle] = useState('')
+ const [value, setValue] = useState(0)
+ const [category, setCategory] = useState('')
  const [type, setType] = useState('deposit')
+
+ function handleCreateNewTransaction(event : FormEvent){
+  event.preventDefault();
+
+  
+    const data = {
+      title, 
+      value, 
+      category, 
+      type
+    }
+
+    api.post('/transactions', data)
+ 
+  
+ }
 
 
   return (
@@ -31,15 +51,19 @@ export function NewTransactionModal({ isOpen,onRequestClose}:NewTransactionModal
         <RxCrossCircled className="svg" style={{width: "2.375rem", height: "2.375rem"}}/>
         {/* <img src={closeImg} alt="close modal" /> */}
       </button>
-      <Container>
+      <Container onSubmit={handleCreateNewTransaction}>
         <h2>Register Transaction</h2>
 
         <input 
-          placeholder="Title" 
+          placeholder="Title"
+          value={title}
+          onChange={event => setTitle(event.target.value)}  
         />
         <input 
           type="number"
-          placeholder="Value" 
+          placeholder="Value"
+          value={value}
+          onChange={event => setValue(Number(event.target.value))} 
         />
 
         <TransactionTypeContainer>
@@ -47,6 +71,7 @@ export function NewTransactionModal({ isOpen,onRequestClose}:NewTransactionModal
             type="button"
             onClick={() => { setType('deposit') }}
             isActive={type === 'deposit'}
+            activeColor="green"
           >
             <BsArrowDownCircle size={30} style={{display: "flex", color: "green"}}/>
             <span>Income</span>
@@ -54,7 +79,8 @@ export function NewTransactionModal({ isOpen,onRequestClose}:NewTransactionModal
           <RadioBox 
             type="button"
             onClick={() => { setType('withdraw') }}
-            isActive={type === 'deposit'}
+            isActive={type === 'withdraw'}
+            activeColor="red"
           >
             <BsArrowUpCircle style={{display: "flex",color: "red"}} size={30}/>
             <span>Outcome</span>
@@ -62,7 +88,9 @@ export function NewTransactionModal({ isOpen,onRequestClose}:NewTransactionModal
         </TransactionTypeContainer> 
 
         <input 
-          placeholder="Category"  
+          placeholder="Category"
+          value={category}
+          onChange={event => setCategory(event.target.value)}  
         />
 
         <button type="submit">Register</button>
