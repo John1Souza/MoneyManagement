@@ -83,7 +83,7 @@ export function Summary() {
           {new Intl.NumberFormat("pt-BR", {
             style: "currency",
             currency: "BRL",
-          }).format(summary.withdraws)}
+          }).format(summary.total)}
         </strong>
       </div>
     </Container>
