@@ -6,7 +6,7 @@
 
 ![image](https://user-images.githubusercontent.com/109979241/220178540-724c81ee-a9be-46d0-9b46-2e4bbfb7ff3f.png)
 
-### Nesta aplicação é possível registrar todas as suas transações, nome, valor, categoria e data.
+### Nesta aplicação é possível registrar todas as suas transações, nome, valor, categoria e tipo, automaticamente ela cadastra a data de cada transação.
 
 ![image](https://user-images.githubusercontent.com/109979241/220178681-ab95a11c-672e-4611-a18b-728041701e54.png)
 
