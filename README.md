@@ -12,6 +12,8 @@
 
 ![image](https://user-images.githubusercontent.com/109979241/220178681-ab95a11c-672e-4611-a18b-728041701e54.png)
 
+### Após inserir o nome, o valor, clicar no botão referente à "Entrada", no caso de valores recebidos, e "Saída" no caso dos gastos, inserir a "Categoria" e clicar em "Registrar" 
+
 ![image](https://user-images.githubusercontent.com/109979241/220178747-d50eabb0-bc6c-4330-b8c0-1ea3c71d47dd.png)
 
 ![image](https://user-images.githubusercontent.com/109979241/220178803-1c5444aa-1460-488c-9fec-2529e716e313.png)
