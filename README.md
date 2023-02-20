@@ -22,19 +22,30 @@
 
 ![image](https://user-images.githubusercontent.com/109979241/220180329-b379d783-9c7d-4560-8512-ca98a3ba85ad.png)
 
+# Tecnologias
+### Neste projeto foram utilizados, o processo de aprendizagem é seguido de muitos erros, erros com os quais espero aprender bastante.
 
-### Neste projeto foram utilizados
 
+## TypeScript
+- Utilizado para tratamento de erros, gerando uma melhor qualidade no código e uma tipagem.
+## useState
+- utilizado para armazenar e mudar os dados obtidos, como os valores dos inputs do modal.
+## useEffect e useContext 
+- o primeiro foi utilizado para buscar(fetch) os dados da API e para atualizar o estado das variáveis quando necessário, o segundo para fazer mudanças no estado que precisam ser compartilhadas com multiplos components. neste exemplo as transações, o estado das transações precisavam ser passados por muitos componentes diferentes.
+## Miragejs
+- utilizado para simular a API
+## Modal
+- Utilizado para fazer os formulários
+## Styled-Components
+- A estilização foi feita utilizando o Styled-Components, que dentre alguns benefícios, permite a estilização em cadeia
+## Axios
+- foi utilizado para conexão com a API, ao invés do fetch padrão, torna o processo um pouco mais simples, pois podemos definir um endereço HTTP padrão.
 
-- TypeScript
-- useState
-- useEffect
-- useContext 
-- Miragejs
-- Modal
-- Styled-Components
-- Axios
-- Context API.
+## Deploy
+
+yarn install -y 
+
+yarn start
 
 
 
