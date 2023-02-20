@@ -26,14 +26,14 @@
 ### Neste projeto foram utilizados
 
 
-- typescript
+- TypeScript
 - useState
 - useEffect
 - useContext 
-- miragejs
-- modal
-- styled-components
-- axios
+- Miragejs
+- Modal
+- Styled-Components
+- Axios
 - Context API.
 
 
