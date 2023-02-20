@@ -4,7 +4,7 @@
 
 ### Íncrivel como algo que aparenta ser uma simples aplicação de gerenciamento de gastos, ao mesmo tempo foram utilizados tantos conhecimentos para sua criação.
 
-![image](https://user-images.githubusercontent.com/109979241/220177706-6f17b813-1d09-40f3-be00-52288a5c6867.png)
+![image](https://user-images.githubusercontent.com/109979241/220178540-724c81ee-a9be-46d0-9b46-2e4bbfb7ff3f.png)
 
 ###
 
