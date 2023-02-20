@@ -8,6 +8,8 @@
 
 ### Nesta aplicação é possível registrar todas as suas transações, nome, valor, categoria e tipo, automaticamente ela cadastra a data de cada transação.
 
+### Clicando em "Nova Transação", será aberto um modal com um formulário para que seja realizado o cadastro da sua nova transação
+
 ![image](https://user-images.githubusercontent.com/109979241/220178681-ab95a11c-672e-4611-a18b-728041701e54.png)
 
 ![image](https://user-images.githubusercontent.com/109979241/220178747-d50eabb0-bc6c-4330-b8c0-1ea3c71d47dd.png)
