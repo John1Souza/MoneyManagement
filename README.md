@@ -23,5 +23,19 @@
 ![image](https://user-images.githubusercontent.com/109979241/220180329-b379d783-9c7d-4560-8512-ca98a3ba85ad.png)
 
 
+### Neste projeto foram utilizados
+
+
+- typescript
+- useState
+- useEffect
+- useContext 
+- miragejs
+- modal
+- styled-components
+- axios
+- Context API.
+
+
 
 
